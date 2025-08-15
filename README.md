@@ -27,3 +27,17 @@ Data Splitting: The dataset was split into training and testing sets to train th
 Model Training: A Logistic Regression model was chosen and trained on the prepared training data.
 
 Model Evaluation: Finally, the trained model was evaluated on the test set using metrics such as accuracy and a classification report to understand its performance, particularly its ability to predict the target variable. The evaluation revealed a higher recall for class 0 compared to class 1, suggesting the model is better at identifying instances of class 0.
+
+
+################################### project3  ###############################################
+
+Missing values in 'Age', 'InGamePurchases', 'Location', and 'GameDifficulty' were handled using median and mode imputation.
+The model for predicting EngagementLevel achieved an accuracy of 0.883 and performed well across all engagement levels (High, Low, Medium), with F1-scores between 0.86 and 0.90.
+The model for predicting InGamePurchases had an accuracy of 0.8135 but completely failed to predict the positive class (players who made purchases), with precision, recall, and F1-score all being 0.0 for this class.
+K-Means clustering segmented players into 4 distinct groups. Cluster 0 showed a notably higher average for InGamePurchases.
+The model for predicting GameDifficulty achieved an accuracy of 0.5265 but struggled to predict 'Hard' and 'Medium' difficulties effectively, performing well only for 'Easy'.
+Applying SMOTE to address class imbalance in the InGamePurchases prediction model improved the model's ability to predict the minority class, although recall and precision for the minority class remained relatively low.
+A RandomForestClassifier model built to predict GameDifficulty achieved an overall accuracy of approximately 52.65% but struggled to predict "Hard" and "Medium" difficulties effectively due to class imbalance, showing a strong bias towards predicting "Easy" difficulty.
+An initial attempt at churn prediction based on low sessions or playtime showed near-perfect accuracy but was identified as potential data leakage. A redefined churn definition and subsequent modeling attempts, even with SMOTE, failed to effectively predict the churn class (class 1), indicating severe class imbalance and the model's inability to identify these instances.
+A genre recommendation system was successfully developed using cosine similarity based on preprocessed player features, providing sample genre recommendations for players based on the preferences of similar players.
+Player segments (clusters) were successfully leveraged to develop targeted marketing strategies and personalized in-game experience recommendations for each cluster, demonstrating how distinct player group characteristics can inform business decisions.
