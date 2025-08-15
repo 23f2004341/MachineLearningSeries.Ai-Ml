@@ -1,3 +1,7 @@
+#########  for dataset email at vishallaxmi77@gmail.com   or call at +91 8604970105 or at +91 9214110226
+
+
+
 ###############################  FOR PROJECT1  ########################################
 
 this is a housing price prediction modelling for regression problem i taken  typicall and most sufficient steps for this project i have started from data loading then preprocessing till upto model evaluation all the way through eda etc.
